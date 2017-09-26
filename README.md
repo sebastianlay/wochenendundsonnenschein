@@ -1,4 +1,6 @@
-# Wochenendundsonnenschein
+# Wochenend und Sonnenschein
+
+meteocons by Alessio Atzeni http://www.alessioatzeni.com/meteocons/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
