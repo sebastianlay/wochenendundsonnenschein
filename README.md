@@ -6,6 +6,14 @@ This is a basic Angular app that pulls weather data for given coordinates from t
 
 meteocons by [Alessio Atzeni](http://www.alessioatzeni.com/meteocons/)
 
+## Installation
+
+Make sure you have a reasonably new version of nodejs and npm.
+
+Install the Angular CLI via `npm install -g @angular/cli`.
+
+To build and preview the project, run `npm install`.
+
 ![Screenshot](/docs/screenshot1.png)
 ![Screenshot](/docs/screenshot2.png)
 ![Screenshot](/docs/screenshot3.png)
