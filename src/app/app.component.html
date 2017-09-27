@@ -1,3 +1,4 @@
+<!-- input form for the coordinates -->
 <header>
   <label>N</label>
   <input [(ngModel)]="latitude">
@@ -5,11 +6,15 @@
   <input [(ngModel)]="longitude">
   <button (click)="loadData()">▶</button>
 </header>
+
+<!-- show the current weather data -->
 <main *ngIf="data.currently">
   <img class="icon" src="{{ 'assets/' + data.currently.icon + '.svg'}}">
   <p class="temperature">{{data.currently.temperature | number:'1.0-0'}}°C</p>
   <p class="summary">{{data.currently.summary}}</p>
 </main>
+
+<!-- show forecast for the next days -->
 <footer *ngIf="data.currently">
   <div *ngFor="let day of data.daily.data">
     <p>{{ day.time * 1000 | date:'EEE' }}</p>

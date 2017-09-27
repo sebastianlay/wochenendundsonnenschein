@@ -1,3 +1,5 @@
+/* header and form */
+
 header {
 	background: #fff;
 	padding: 0.5vw 0;
@@ -8,18 +10,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 5vh;
-	padding: 0 20vw;
-}
-
-footer div {
-	margin: 2vw;
 }
 
 input, label {
@@ -61,6 +51,8 @@ button:active {
 	color: #444;
 }
 
+/* main - current data */
+
 main .icon {
 	width: 10vw;
 	height: 10vw;
@@ -78,6 +70,20 @@ main .summary {
 	font-size: 2vw;
 }
 
+/* footer - forecast */
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 5vh;
+	padding: 0 20vw;
+}
+
+footer div {
+	margin: 2vw;
+}
+
 footer .icon {
 	width: 2vw;
 	height: 2vw;
@@ -89,6 +95,8 @@ footer .icon {
 footer .temperature {
 	font-size: 1vw;
 }
+
+/* media queries */
 
 @media (max-width: 1000px) {
 

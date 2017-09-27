@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
     FormsModule
   ],
   providers: [
+    // set the language for the DatePipe
   	{ provide: LOCALE_ID, useValue: 'de-DE' }
   ],
   bootstrap: [AppComponent]
