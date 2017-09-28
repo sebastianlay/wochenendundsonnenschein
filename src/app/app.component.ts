@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   // since darksky disabled CORS we have to use JSONP
   // see: https://darksky.net/dev/docs/faq#cross-origin
   loadData(): void {
-    let url = 'https://api.darksky.net/forecast/' + key + '/' + this.latitude + ',' + this.longitude + '?lang=de&units=si&callback=JSONP_CALLBACK'
+    let url = 'https://api.darksky.net/forecast/' + this.key + '/' + this.latitude + ',' + this.longitude + '?lang=de&units=si&callback=JSONP_CALLBACK'
     this.jsonp.request(url).subscribe(
       response => this.data = response.json()
     );
